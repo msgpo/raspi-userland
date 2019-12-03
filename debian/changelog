@@ -1,0 +1,5 @@
+raspi-userland (1.20190925-1) bionic; urgency=medium
+
+  * Hacky build for mark
+
+ -- Harald Sitter <sitter@kde.org>  Fri, 24 Aug 2018 10:07:45 +0200

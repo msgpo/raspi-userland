@@ -1,0 +1,12 @@
+Source: raspi-userland
+Section: misc
+Priority: optional
+Maintainer: Nobody <nobody@nowhere.tld>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.3
+
+Package: raspi-userland
+Architecture: arm64 armhf
+Depends: ${misc:Depends}
+Description: it raspi-userlands
+ raspi-userlands stuff
