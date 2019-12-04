@@ -2,7 +2,9 @@ Source: raspi-userland
 Section: misc
 Priority: optional
 Maintainer: Nobody <nobody@nowhere.tld>
-Build-Depends: debhelper (>= 9)
+Build-Depends: debhelper (>= 9),
+               pkg-kde-tools,
+               cmake
 Standards-Version: 3.9.3
 
 Package: raspi-userland
