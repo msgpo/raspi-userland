@@ -1,11 +1,7 @@
 #!/usr/bin/make -f
 
-ifeq ($(DEB_HOST_ARCH),arm64)
-	EXTRA_CMAKE_ARGUMENTS += -DARM64=1
-endif
-
 %:
 	dh $@ --buildsystem=cmake
 
 override_dh_auto_configure:
-	dh_auto_configure -- $(EXTRA_CMAKE_ARGUMENTS)
+	dh_auto_configure -- -DARM64=1
