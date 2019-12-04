@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 
-ifneq ($(DEB_HOST_ARCH),arm64)
-	EXTRA_CMAKE_ARGUMENTS += -DARM64
+ifeq ($(DEB_HOST_ARCH),arm64)
+	EXTRA_CMAKE_ARGUMENTS += -DARM64=1
 endif
 
 %:
