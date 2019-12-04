@@ -5,7 +5,7 @@ ifneq ($(DEB_HOST_ARCH),arm64)
 endif
 
 %:
-	dh $@ --buildsystem=cmake+ninja
+	dh $@ --buildsystem=cmake
 
 override_dh_auto_configure:
 	dh_auto_configure -- $(EXTRA_CMAKE_ARGUMENTS)
