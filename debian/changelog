@@ -1,4 +1,4 @@
-raspi-userland (1.20190925-1) bionic; urgency=medium
+raspi-userland (0.1-1) bionic; urgency=medium
 
   * Hacky build for mark
 
