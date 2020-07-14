@@ -4,4 +4,4 @@
 	dh $@ --buildsystem=cmake
 
 override_dh_auto_configure:
-	dh_auto_configure -- -DARM64=1
+	dh_auto_configure -- -DARM64=1 -DARMHF=1
