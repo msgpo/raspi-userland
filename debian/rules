@@ -3,5 +3,8 @@
 %:
 	dh $@ --buildsystem=cmake
 
-override_dh_auto_configure:
-	dh_auto_configure -- -DARM64=1 -DARMHF=1
+override_dh_auto_configure-arm64:
+	dh_auto_configure -- -DARM64=1
+
+override_dh_auto_configure-armhf:
+	dh_auto_configure -- -DARMHF=1
